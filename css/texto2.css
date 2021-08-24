@@ -1,0 +1,36 @@
+#texto2 .contenedor{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#texto2 .cle{
+	margin: 15px;
+	cursor: pointer;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.95);
+	transition: 300ms;
+	border-radius: 10px;
+}
+
+#texto2 .cle:after{
+	content:"";
+	background-color:
+}
+
+#texto2 .cle:hover{
+	transform: scale(1.05);
+}
+
+#texto2 img{
+	width: 100%;
+	max-width: 280px;
+	display: block;
+}
+
+#texto2 h3{
+	text-align: center;
+}
+#texto2 h4{
+	text-align: center;
+}
+

@@ -56,19 +56,14 @@ footer .contenedor{
 	text-decoration: none;
 }
 
-table,tr,th,td{
+table{
 			
-			border: 1px solid white;
+			
 			border-collapse: collapse;
 			border-color: black;
-			background-color: white;
-			width: 200px;
+			background-color: rgb(247, 247, 247);
+			width: 70%;
 			height: 200px;
 		}
 
-		th,td{
-			padding: 5px;
-		}
-		h1{
-			text-align: center;
-		}
+	

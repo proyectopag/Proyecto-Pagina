@@ -158,6 +158,7 @@
 						}
 						elseif($m > 0 && $n > 0){
 							$h=sqrt($m+$n);
+							$hp=$m+$n;
 							$Area=(($m+$n)*$h)/2;
 							echo "<br>"."El Área del triángulo es: ".$Area;
 							echo "<br>"."Donde m =".$m." y n = ".$n." por lo tanto c= ".$hp." y hc= ".$h;

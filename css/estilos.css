@@ -3,6 +3,17 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
+* {
+    font-family: 'Fraunces', serif;
+}
+
+@font-face {
+    font-family: curva;
+    src: url(KidsOnTheMoon.ttf);
+
+}
+
+
 body{
 	font-family:'open sans', sans-serif;
 

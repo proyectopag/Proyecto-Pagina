@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Inicio</title>
+	<title>Herramientas</title>
 	<meta charset="utf-8">
 	<meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	
-	<link rel="stylesheet" href="css/fontello.css">
-	<link rel="stylesheet" href="css/estilos.css">
-	<link rel="stylesheet" href="css/menu.css">
-	<link rel="stylesheet" href="css/banner.css">
-	<link rel="stylesheet" href="css/texto2.css">
-	<link rel="stylesheet" href="css/info.css">
-	<link rel="shortcut icon" href="img/Herramientas.png">
+	<link rel="stylesheet" href="../css/fontello.css">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../css/menu.css">
+	<link rel="stylesheet" href="../css/banner.css">
+	<link rel="stylesheet" href="../css/texto2.css">
+	<link rel="stylesheet" href="../css/info.css">
+
+	<link rel="shortcut icon" href="../img/calculating.png">
+
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -27,10 +29,10 @@
 				<input type="checkbox" id="menu1">
 				<label for="menu1" class="icon-home"></label>
 				<nav class="menu">
-					<a href="Inicio.html">Inicio</a>		
-					<a href="templates/Herramientas.html">Herramientas</a>
-					<a href="templates/Temas.html">Temas</a>
-					<a href="templates/Contacto.html">Contacto</a>
+					<a href="../Inicio.html">Inicio</a>
+					<a href="../templates/Herramientas.html">Herramientas</a>
+					<a href="../templates/Temas.html">Temas</a>
+					<a href="../templates/Contacto.html">Contacto</a>
 					<a href="">Ayuda</a>
 				</nav>
 			</div>
@@ -38,35 +40,43 @@
 		</header>
 		<main>
 			<section id="banner">
-				<img src="img/2.jpg">
+				<img src="../img/2.jpg">
 				<div class="contenedor">
-					<font face="georgia"><h2>MATEWEB</h2></font>
-					<p>Contenido</p>
-					
+				  <font face="georgia"><h2>MATEWEB</h2></font>
+				  <p>Herramientas</p>
+				  
 				</div>
-			</section><br><br>				
-				</div>
-			</section>
-			<section id="texto2">
-				
+			  </section><br><br>
+			  <section id="texto">
+				<h2>Volumen de un Cilindro</h2>
+			  </section><br>
 				<div class="contenedor">
+				  <form action="VolumenDeUnCilindro.php" method="post" name="AreadC">
+				  	<p>Para calcular el Volumen de un cilindro debemos conocer el valor del radio (r) de la base y de la altura (h) del cilindro:</p>
 
-					<div class="cle" > 
-						<a href="templates/Herramientas.html"><img src="img/Herramientas.png" style="padding-top: 20px;padding-left: 20px;padding-right: 20px;margin-bottom: 20px;" ></a>
-						<h3 >Herramientas</h3>
-					</div>
+				  	<br>
+				  	<p>r= <input type="text" name="r" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
+				  	<p>h= <input type="text" name="h" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
+				  	<br>
 
-					<div class="cle">
-						
-						<a href="templates/Temas.html"> <img style="padding-top: 20px;padding-left: 20px;padding-right: 20px;margin-bottom: 20px;" src="https://i.pinimg.com/736x/dc/40/f9/dc40f983e787ad9ac1acf3f4478ef246.jpg" > </a>
-						<h3>Temas</h3>
-					</div>
+				  	<input type="submit" value="Calcular"/>
+				  </form>
+				  <br>
+				  <?php 
+						$r = $_POST['r'];
+						$h = $_POST['h'];
 
-
+						if($r > 0 && $h > 0){
+							$a= ($r*$r)*3.14159265359;
+							$v=$a*$h;
+							echo "El Volumen del Cilindro es: ".$v;
+							echo "<br>"."Donde el radio es = ".$r." el alto es = ".$h." y el area de la base es = ".$a;
+						}
+					?> 	
 				</div>
-			</section>
+			  </section><br><br><br>
 
-
+			
 			<section id="info">
 				<h3>Siguenos en Nuestras redes Sociales</h3>
 
@@ -76,14 +86,15 @@
 						<img style="width: 8%;" src="https://cdn.pixabay.com/photo/2020/11/15/06/18/instagram-logo-5744708_960_720.png" alt="">
 
 					</div>
-					
 					<div class="contenedor">
 						<p class="copy">Proyecto Pagina Web - Universidad De Los Llanos<br>Grupo XD<br> &copy;2021</p>
 						
 					</div>
+					
 				</div>
 			</section>
 
 		</main>
+
 	</body>
 </html>

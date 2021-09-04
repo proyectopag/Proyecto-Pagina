@@ -44,46 +44,51 @@
 				<div class="contenedor">
 				  <font face="georgia"><h2>MATEWEB</h2></font>
 				  <p>Herramientas</p>
-				  
 				</div>
 			  </section><br><br>
 			  <section id="texto">
-				<h2>Seleccione la herramienta: </h2>
+				<h2>Área de un Rectángulo</h2>
 			  </section><br>
 				<div class="contenedor">
-					<table class="table" border="2px" style="border-color:black;">
-						<tr><th>Herramienta</th>
-							<th>Descripción</th>
-						</tr>
-						<tr>
-							<td><a href="../php/AreaDeUnCirculo.php">Área de un círculo</a></td>
-							<td>Esta herramienta permite calcular el área de un círculo a partir del diametro o del radio</td>
-						</tr>
-						<tr>
-							<td><a href="../php/AreaDeUnRectangulo.php">Área de un Rectángulo</a></td>
-							<td>Esta herramienta permite calcular el área de un rectángulo o de un cuadrado a partir de su lado mayor y lado menor en el caso de un rectángulo o a partir de un lado en el caso del cuadrado</td>
-						</tr>
-						<tr>
-							<td><a href="../php/AreaDeUnTriangulo.php">Área de un Triángulo</a></td>
-							<td>Esta herramienta permite calcular el área de un triángulo rectángulo de 3 diferentes maneras, la primera conociendo su base y altura, la segunda conociendo dos de sus lados y el angulo entre ellos, la tercera mediante el Teorema de Euclides</td>
-						</tr>
-						<tr>
-							<td><a href="../php/VolumenDeUnParalelepipedo.php">Volumen de un Paralelepipedo</a></td>
-							<td>Esta herramienta permite calcular el volumen de un paralelepipedo conociendo el valor de sus 3 dimensiones, alto, largo y ancho.</td>
-						</tr>
-						<tr>
-							<td><a href="../php/VolumenDeUnCilindro.php">Volumen de un Cilindro</a></td>
-							<td>Esta herramienta permite calcular el volumen de un cilindro a partir del valor de su radio y su altura</td>
-						</tr>
-						<tr>
-							<td><a href="../php/VolumenDeUnaPiramide.php">Volumen de una Piramide</a></td>
-							<td>Esta herramienta permite calcular el volumen de una piramide con base cuadrada o rectangular, una piramide triangular y un cono.</td>
-						</tr>
-					</table>
+				  <form action="AreaDeUnRectangulo.php" method="post" name="AreadR">
+				  	<p>Para calcular el Àrea de un rectángulo ingrese el valor de sus lados L1 y L2, para calcular el Àrea de un cuadrado ingrese solamente el valor de uno de sus lados:</p>
+				  	<br>
+				  	<p>L1= <input type="text" name="L1" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
+				  	
+				  	<p>L2= <input type="text" name="L2" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
+				  	<br>
+				  	<input type="submit" value="Calcular"/>
+				  </form>
+				  <br>
+				  <?php 
+						$L1 = $_POST['L1'];
+						$L2 = $_POST['L2'];				  	
 
+						if($L1 > 0 && $L2 > 0){
+							$Area = $L1* $L2;
+							echo "El Área del rectángulo es: ".$Area;
+							echo "<br>"."Donde el Lado 1 es = ".$L1." y el Lado 2 es =".$L2;
+						}
+						elseif($L1 > 0 && $L2 <=0){
+							$Area = $L1* $L1;
+							echo "El Área del Cuadrado es: ".$Area;
+							echo "<br>"."Donde el Lado es = ".$L1;
+						}
+						elseif($L2 > 0 && $L1 <=0){
+							$Area = $L2* $L2;
+							echo "El Área del Cuadrado es: ".$Area;
+							echo "<br>"."Donde el Lado es = ".$L2;
+						}
+						else{
+							echo "Ingrese un valor para el L1 y el L2 en el caso de un rectángulo o un valor para L1 o L2 en el caso de un cuadrado";
+						}
+					?> 
+					<br><br><p><b>Formulas utilizadas: </b></p>
+					<p>Para un Rectángulo: </p>
+					<img src="../img/adr.png" style="width: 200px;height: 50px;">
+					<br><p>Para un Cuadrado: </p>
+					<img src="../img/adc.png" style="width: 120px;height: 50px;">		
 				</div>
-
-
 			  </section><br><br><br>
 
 			

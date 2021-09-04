@@ -48,42 +48,43 @@
 				</div>
 			  </section><br><br>
 			  <section id="texto">
-				<h2>Seleccione la herramienta: </h2>
+				<h2>Área de un círculo</h2>
 			  </section><br>
 				<div class="contenedor">
-					<table class="table" border="2px" style="border-color:black;">
-						<tr><th>Herramienta</th>
-							<th>Descripción</th>
-						</tr>
-						<tr>
-							<td><a href="../php/AreaDeUnCirculo.php">Área de un círculo</a></td>
-							<td>Esta herramienta permite calcular el área de un círculo a partir del diametro o del radio</td>
-						</tr>
-						<tr>
-							<td><a href="../php/AreaDeUnRectangulo.php">Área de un Rectángulo</a></td>
-							<td>Esta herramienta permite calcular el área de un rectángulo o de un cuadrado a partir de su lado mayor y lado menor en el caso de un rectángulo o a partir de un lado en el caso del cuadrado</td>
-						</tr>
-						<tr>
-							<td><a href="../php/AreaDeUnTriangulo.php">Área de un Triángulo</a></td>
-							<td>Esta herramienta permite calcular el área de un triángulo rectángulo de 3 diferentes maneras, la primera conociendo su base y altura, la segunda conociendo dos de sus lados y el angulo entre ellos, la tercera mediante el Teorema de Euclides</td>
-						</tr>
-						<tr>
-							<td><a href="../php/VolumenDeUnParalelepipedo.php">Volumen de un Paralelepipedo</a></td>
-							<td>Esta herramienta permite calcular el volumen de un paralelepipedo conociendo el valor de sus 3 dimensiones, alto, largo y ancho.</td>
-						</tr>
-						<tr>
-							<td><a href="../php/VolumenDeUnCilindro.php">Volumen de un Cilindro</a></td>
-							<td>Esta herramienta permite calcular el volumen de un cilindro a partir del valor de su radio y su altura</td>
-						</tr>
-						<tr>
-							<td><a href="../php/VolumenDeUnaPiramide.php">Volumen de una Piramide</a></td>
-							<td>Esta herramienta permite calcular el volumen de una piramide con base cuadrada o rectangular, una piramide triangular y un cono.</td>
-						</tr>
-					</table>
+				  <form action="AreaDeUnCirculo.php" method="post" name="AreadC">
+				  	<p>Para calcular el Area de un circulo se necesita el valor del radio (R) o el valor del diametro (D):</p>
+				  	<br>
+				  	<p>R= <input type="text" name="Radio" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
+				  	
+				  	<p>D= <input type="text" name="Diametro" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
+				  	<br>
+				  	<input type="submit" value="Calcular"/>
+				  </form>
+				  <br>
+				  <?php 
+						$Radio = $_POST['Radio'];
+						$Diametro = $_POST['Diametro'];				  	
 
+						if($Radio > 0){
+							$Area = $Radio * $Radio * 3.14159265359;
+							echo "El Área del Círculo es: ".$Area;
+							echo "<br>"."Donde el Radio es = ".$Radio." y Pi es = "."3.14159265359";
+						}
+						elseif($Diametro > 0){
+							$Area = ($Diametro/2) * ($Diametro/2) * 3.14159265359;
+							echo "El Área del Círculo es: ".$Area;
+							echo "<br>"."Donde el Diametro es = ".$Diametro." y Pi es = "."3.14159265359";
+						}
+						else{
+							echo "Ingrese un valor para el Radio o el Diametro";
+						}
+					?> 
+					<br><br><p><b>Formulas utilizadas: </b></p>
+					<p>Cuando se ingreso el Radio (R): </p>
+					<img src="../img/Aduc1.png" style="width: 200px;height: 50px;">
+					<br><p>Cuando se ingreso el Diametro (D): </p>
+					<img src="../img/Aduc2.png" style="width: 250px;height: 100px;">		
 				</div>
-
-
 			  </section><br><br><br>
 
 			

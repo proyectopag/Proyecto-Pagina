@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="../css/texto2.css">
 	<link rel="stylesheet" href="../css/info.css">
 
-	<link rel="shortcut icon" href="../img/calculating.png">
+	<link rel="shortcut icon" href="../img/Herramientas.png">
+
 
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -23,11 +24,13 @@
 </head>
 	<body>
 		<header>
-			<div class="contenedor">
+		<div class="contenedor">
+			<a href="../Inicio.html"><h1 style="font-family:curva;color: white;">MATEWEB</h1></a>
 
-				<h1 style="font-family:cursive;">Matemáticas</h1>
-				<input type="checkbox" id="menu1">
-				<label for="menu1" class="icon-home"></label>
+			<input type="checkbox" id="menu1">
+
+			<label for="menu1" > <img src="https://image.flaticon.com/icons/png/512/56/56763.png" alt="" style="width: 20px;padding-bottom: 10px;"></label>
+
 				<nav class="menu">
 					<a href="../Inicio.html">Inicio</a>
 					<a href="../templates/Herramientas.html">Herramientas</a>
@@ -42,26 +45,31 @@
 			<section id="banner">
 				<img src="../img/2.jpg">
 				<div class="contenedor">
-				  <font face="georgia"><h2>MATEWEB</h2></font>
-				  <p>Herramientas</p>
-				  
+				  <font face="georgia"><h2 style="font-family:cur;">Matemáticas</h2></font>
 				</div>
 			  </section><br><br>
 			  <section id="texto">
-				<h2>Volumen de una Piramide</h2>
+				<h2> <b>Volumen de una Piramide</b> </h2>
 			  </section><br>
 				<div class="contenedor">
 				  <form action="VolumenDeUnaPiramide.php" method="post" name="AreadC">
-				  	<p><b>Para calcular el Volumen de una piramide se necesita saber el area de su base y su altura:</b></p>
+				  	<h5> Para calcular el Volumen de una piramide se necesita saber el area de su base y su altura:</h5>
+					<p>Ingrese el valor del lado mayor(l1) y del lado menor(l2) y la altura(h) de la piramide, si la base es un cuadrado solo ingrese el valor de uno de sus lados en (l1) o (l2):</p>
+
 				  	<br>
-				  	<p><b>Para una piramide con base Rectangular: </b></p>
-				  	<br>
-				  	<p>Ingrese el valor del lado mayor(l1) y del lado menor(l2) y la altura(h) de la piramide, si la base es un cuadrado solo ingrese el valor de uno de sus lados en (l1) o (l2):</p>
-				  	<p>l1= <input type="text" name="l1" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
-				  	<p>l2= <input type="text" name="l2" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
-				  	<p>h= <input type="text" name="h" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
-				  	<br>
-				  	<input type="submit" value="Calcular"/>
+
+					  <div class="input-group mb-3">
+						<span class="input-group-text" id="basic-addon1">L1</span>
+						<input type="number" class="form-control" placeholder="L1" aria-label="L1" aria-describedby="basic-addon1" name="l1" value="0" inputmode="numeric" />
+
+						<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">L2</span>
+						<input type="number" class="form-control" placeholder="L2" aria-label="L2" aria-describedby="basic-addon1" name="l2" value="0" inputmode="numeric" />
+						
+						<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">H</span>
+						<input type="number" class="form-control" placeholder="H" aria-label="H" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
+
+						<button style="margin-left: 15px;" type="submit" class="btn btn-primary">Calcular</button>
+					</div>
 				  </form>
 				  <br>
 				  <?php 
@@ -72,33 +80,70 @@
 						if($l1 > 0 && $l2 > 0 && $h > 0){
 							$a= ($l1*$l2);
 							$v=($a*$h)/3;
-							echo "El Volumen de la piramide es: ".$v;
-							echo "<br>"."Donde el l1 es = ".$l1.", l2 es = ".$l2.", la altura de la piramide es = ".$h." y el area de la base es = ".$a;
+							echo "
+							
+								<div class='alert alert-warning' role='alert'>
+									El Volumen de la piramide es: $v
+								</div>
+							";
+							echo "
+
+								<div class='alert alert-warning' role='alert'>
+									Donde el l1 es = $l1, l2 es = $l2, la altura de la piramide es = $h y el area de la base es = $a
+								</div>							
+
+							";
 						}
 						elseif($l1 > 0 && $l2 <=0 && $h > 0){
 							$a=($l1*$l1);
 							$v=($a*$h)/3;
-							echo "El Volumen de la piramide es: ".$v;
-							echo "<br>"."Donde el lado del cuadrado base es = ".$l1.", la altura de la piramide es = ".$h." y el area de la base es = ".$a;
+							echo "
+							
+								<div class='alert alert-warning' role='alert'>
+									El Volumen de la piramide es: $v
+								</div>
+							";
+							echo "
+							
+								<div class='alert alert-warning' role='alert'>
+									Donde el lado del cuadrado base es = $l1, la altura de la piramide es = $h y el area de la base es = $a
+								</div>
+							
+							";
 						}
 						elseif($l2 > 0 && $l1 <=0 && $h > 0){
 							$a=($l2*$l2);
 							$v=($a*$h)/3;
-							echo "El Volumen de la piramide es: ".$v;
-							echo "<br>"."Donde el lado del cuadrado base es = ".$l2.", la altura de la piramide es = ".$h." y el area de la base es = ".$a;
+							echo "
+							
+								<div class='alert alert-warning' role='alert'>
+									El Volumen de la piramide es: $v
+								</div>
+							";
+							echo "
+							
+								<div class='alert alert-warning' role='alert'>
+								Donde el lado del cuadrado base es = $l2, la altura de la piramide es = $h y el area de la base es = $a
+								</div>
+							";
 						}
 					?>
 				<br>
 				<br>
 				<form action="VolumenDeUnaPiramide.php" method="post" name="AreadC">
 				  	<p><b>Para calcular el Volumen de un Cono :</b></p>
-				  	<br>
+				  	
 				  	<p>un cono es una piramide con una circunferencia de base, por lo tanto se requiere el radio(r) de la circunferencia base y la altura(h) del cono</p>
 				  	<br>
-				  	<p>r= <input type="text" name="r" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
-				  	<p>h= <input type="text" name="h" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
-				  	<br>
-				  	<input type="submit" value="Calcular"/>
+					  <div class="input-group mb-3">
+						<span class="input-group-text" id="basic-addon1">R</span>
+						<input type="number" class="form-control" placeholder="R" aria-label="R" aria-describedby="basic-addon1" name="r" value="0" inputmode="numeric" />
+
+						<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">H</span>
+						<input type="number" class="form-control" placeholder="H" aria-label="H" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
+
+						<button style="margin-left: 15px;" type="submit" class="btn btn-primary">Calcular</button>
+					</div>
 				  </form>
 				  <br>
 				  <?php 
@@ -108,24 +153,44 @@
 						if($r > 0 && $h > 0){
 							$a= ($r*$r)*3.14159265359;
 							$v=($a*$h)/3;
-							echo "El Volumen del cono es: ".$v;
-							echo "<br>"."Donde el radio de la circunferencia base es = ".$r.", la altura del cono es = ".$h." y el area de la base es = ".$a;
+							echo "
+							
+								<div class='alert alert-warning' role='alert'>
+									El Volumen del cono es: $v
+								</div>
+
+							";
+							echo "
+							
+
+								<div class='alert alert-warning' role='alert'>
+									Donde el radio de la circunferencia base es = $r, la altura del cono es = $h y el area de la base es = $a
+								</div>
+
+							";
 						}
 					?> 
 					<br>
 					<br>
 					<form action="VolumenDeUnaPiramide.php" method="post" name="AreadC">
-				  	<p><b>Para calcular el Volumen de una Piramide triangular:</b></p>
-				  	<br>
-				  	<p>ingrese el valor de la base del triangulo(b) y la altura de dicho triangulo (ht) y la altura de la piramide (h): </p>
-				  	<br>
-				  	<p>b= <input type="text" name="b" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
-				  	<p>ht= <input type="text" name="ht" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
-				  	<p>h= <input type="text" name="h" value="0" style="width: 50px;height: 20px;" inputmode="numeric" /> </p>
-				  	<br>
-					<p>Si no conoce el valor de la base y la altura usar la herramienta para calcular el <a href="AreaDeUnTriangulo.php">área de un tríangulo</a> y mediante el teorema de Euclides podras saber el valor de la base (c) y la altura (hc).</p>
-				  	<input type="submit" value="Calcular"/>
-				  </form>
+						<p><b>Para calcular el Volumen de una Piramide triangular:</b></p>
+						
+						<p>ingrese el valor de la base del triangulo(b) y la altura de dicho triangulo (ht) y la altura de la piramide (h): </p>
+
+						<div class="input-group mb-3">
+							<span class="input-group-text" id="basic-addon1">B</span>
+							<input type="number" class="form-control" placeholder="B" aria-label="B" aria-describedby="basic-addon1" name="b" value="0" inputmode="numeric" />
+
+							<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">HT</span>
+							<input type="number" class="form-control" placeholder="HT" aria-label="HT" aria-describedby="basic-addon1" name="ht" value="0" inputmode="numeric" />
+							
+							<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">H</span>
+							<input type="number" class="form-control" placeholder="H" aria-label="H" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
+
+							<button style="margin-left: 15px;" type="submit" class="btn btn-primary">Calcular</button>
+						</div>
+						<p>Si no conoce el valor de la base y la altura usar la herramienta para calcular el <a href="AreaDeUnTriangulo.php">área de un tríangulo</a> y mediante el teorema de Euclides podras saber el valor de la base (c) y la altura (hc).</p>
+					</form>
 				  <br>
 				  <?php 
 						$b = $_POST['b'];
@@ -135,14 +200,70 @@
 						if($b > 0 && $h > 0 && $ht > 0){
 							$a= ($b*$ht)/2;
 							$v=($a*$h)/3;
-							echo "El Volumen de la piramide triangular es: ".$v;
-							echo "<br>"."Donde el valor de la base del triangulo es = ".$b.", la altura del triangulo base es = ".$ht.", la altura de la piramide es = ".$h." y el area de la base es = ".$a;
+							echo "
+							
+							
+								<div class='alert alert-warning' role='alert'>
+									El Volumen de la piramide triangular es: $v
+								</div>
+							";
+							echo "
+								<div class='alert alert-warning' role='alert'>
+								Donde el valor de la base del triangulo es = $b, la altura del triangulo base es = $ht, la altura de la piramide es = $h y el area de la base es = $a
+								</div>
+							";
 						}
 					?> 		
 				</div>
-			  </section><br><br><br>
+			  </section><br>
 
-			
+			  <nav  aria-label="Page navigation example" style="display: flex;justify-content: center;">
+						<ul class="pagination">
+							<div class="tooltip">
+								<li class="page-item"> <span class="tooltiptext">Página anterior</span>
+									<a class="page-link" href="VolumenDeUnCilindro.php" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+							</div>
+
+							<div class="tooltip">
+								<li style="width: 35px;text-align: center;" class="page-item"> <span class="tooltiptext">Área de un círculo</span> <a class="page-link" href="AreaDeUnCirculo.php" >1</a></li>
+							</div>
+							<div class="tooltip">
+								<li  class="page-item"> <span class="tooltiptext">Área de un Rectángulo</span> <a class="page-link" href="AreaDeUnRectangulo.php" >2</a></li>
+							</div>
+							<div class="tooltip">
+								<li  class="page-item"> <span class="tooltiptext">Área de un Triángulo</span> <a class="page-link" href="AreaDeUnTriangulo.php" >3</a></li>
+							</div>
+
+							<div class="tooltip">
+								<li  class="page-item"> <span class="tooltiptext">Volumen de un Paralelepipedo</span> <a class="page-link" href="VolumenDeUnParalelepipedo.php" >4</a></li>
+							</div>
+							
+							<div class="tooltip">
+								<li  class="page-item"> <span class="tooltiptext">Volumen de un Cilindro</span> <a class="page-link" href="VolumenDeUnCilindro.php" >5</a></li>
+							</div>
+							
+							<div class="tooltip">
+								<li  class="page-item"> <span class="tooltiptext">Volumen de una Piramide</span> <a class="page-link" href="#" style="background-color: #eef1f5;">6</a></li>
+							</div>
+							
+							
+
+							<div class="tooltip">
+								
+								<li class="page-item"> <span class="tooltiptext">Página siguiente</span>
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</div>
+							
+						</ul>
+				</nav>
+
+
 			<section id="info">
 				<h3>Siguenos en Nuestras redes Sociales</h3>
 

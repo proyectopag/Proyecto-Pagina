@@ -7,9 +7,60 @@
     font-family: 'Fraunces', serif;
 }
 
+.tooltip {
+	position: relative !important;
+	display: inline-block !important;
+	border-bottom: 0px dotted black !important; /* If you want dots under the hoverable text */
+	opacity: 1 !important;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+	visibility: hidden !important;
+	width: 120px !important;
+	background-color: black !important;
+	color: #fff!important;
+	text-align: center!important;
+	padding: 5px !important;
+	border-radius: 6px!important;
+   
+	/* Position the tooltip text - see examples below! */
+	position: absolute!important;
+	z-index: 1!important;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+	visibility: visible!important;
+  }
+
+  .tooltip .tooltiptext {
+	width: 120px!important;
+	bottom: 120%!important;
+	left: 50%!important;
+	margin-left: -60px!important; /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+
 @font-face {
     font-family: curva;
     src: url(KidsOnTheMoon.ttf);
+
+}
+@font-face {
+    font-family: curvo;
+    src: url(Afterglow-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: cur;
+    src: url(Vintage-Rovery.otf);
+
+}
+
+a{
+	text-decoration: none !important;
+	font-family:curvo;
 
 }
 

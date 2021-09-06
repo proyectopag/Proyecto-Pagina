@@ -58,10 +58,10 @@
 
 					  <div class="input-group mb-3">
 						<span class="input-group-text" id="basic-addon1">R</span>
-						<input type="number" class="form-control" placeholder="r" aria-label="r" aria-describedby="basic-addon1" name="r" value="0" inputmode="numeric" />
+						<input type="text" class="form-control" placeholder="r" aria-label="r" aria-describedby="basic-addon1" name="r" value="0" inputmode="numeric" />
 
 						<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">H</span>
-						<input type="number" class="form-control" placeholder="h" aria-label="h" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
+						<input type="text" class="form-control" placeholder="h" aria-label="h" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
 						<button style="margin-left: 15px;" type="submit" class="btn btn-primary">Calcular</button>
 
 					</div>

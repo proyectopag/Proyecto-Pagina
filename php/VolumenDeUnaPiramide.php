@@ -61,13 +61,13 @@
 
 					  <div class="input-group mb-3">
 						<span class="input-group-text" id="basic-addon1">L1</span>
-						<input type="number" class="form-control" placeholder="L1" aria-label="L1" aria-describedby="basic-addon1" name="l1" value="0" inputmode="numeric" />
+						<input type="text" class="form-control" placeholder="L1" aria-label="L1" aria-describedby="basic-addon1" name="l1" value="0" inputmode="numeric" />
 
 						<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">L2</span>
-						<input type="number" class="form-control" placeholder="L2" aria-label="L2" aria-describedby="basic-addon1" name="l2" value="0" inputmode="numeric" />
+						<input type="text" class="form-control" placeholder="L2" aria-label="L2" aria-describedby="basic-addon1" name="l2" value="0" inputmode="numeric" />
 						
 						<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">H</span>
-						<input type="number" class="form-control" placeholder="H" aria-label="H" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
+						<input type="text" class="form-control" placeholder="H" aria-label="H" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
 
 						<button style="margin-left: 15px;" type="submit" class="btn btn-primary">Calcular</button>
 					</div>
@@ -138,10 +138,10 @@
 				  	<br>
 					  <div class="input-group mb-3">
 						<span class="input-group-text" id="basic-addon1">R</span>
-						<input type="number" class="form-control" placeholder="R" aria-label="R" aria-describedby="basic-addon1" name="r" value="0" inputmode="numeric" />
+						<input type="text" class="form-control" placeholder="R" aria-label="R" aria-describedby="basic-addon1" name="r" value="0" inputmode="numeric" />
 
 						<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">H</span>
-						<input type="number" class="form-control" placeholder="H" aria-label="H" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
+						<input type="text" class="form-control" placeholder="H" aria-label="H" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
 
 						<button style="margin-left: 15px;" type="submit" class="btn btn-primary">Calcular</button>
 					</div>
@@ -180,13 +180,13 @@
 
 						<div class="input-group mb-3">
 							<span class="input-group-text" id="basic-addon1">B</span>
-							<input type="number" class="form-control" placeholder="B" aria-label="B" aria-describedby="basic-addon1" name="b" value="0" inputmode="numeric" />
+							<input type="text" class="form-control" placeholder="B" aria-label="B" aria-describedby="basic-addon1" name="b" value="0" inputmode="numeric" />
 
 							<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">HT</span>
-							<input type="number" class="form-control" placeholder="HT" aria-label="HT" aria-describedby="basic-addon1" name="ht" value="0" inputmode="numeric" />
+							<input type="text" class="form-control" placeholder="HT" aria-label="HT" aria-describedby="basic-addon1" name="ht" value="0" inputmode="numeric" />
 							
 							<span style="margin-left: 15px;" class="input-group-text" id="basic-addon1">H</span>
-							<input type="number" class="form-control" placeholder="H" aria-label="H" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
+							<input type="text" class="form-control" placeholder="H" aria-label="H" aria-describedby="basic-addon1" name="h" value="0" inputmode="numeric" />
 
 							<button style="margin-left: 15px;" type="submit" class="btn btn-primary">Calcular</button>
 						</div>

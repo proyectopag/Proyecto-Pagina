@@ -263,6 +263,42 @@
 							 ";
 							
 						}
+						elseif($hp > 0 && $m > 0){
+							$n=$hp - $m;
+							$h=sqrt($m*$n);
+							$Area=($hp*$h)/2;
+							echo "
+							
+								<div class='alert alert-warning' role='alert'>
+									El Área del triángulo es: $Area
+								</div>
+							";
+							echo "
+								
+								<div class='alert alert-warning' role='alert'>
+									Donde m = $m  y c = $hp por lo tanto n= $n y hc= $h
+								</div>	
+							
+							 ";
+						}
+						elseif($hp > 0 && $n > 0){
+							$m=$hp - $n;
+							$h=sqrt($m*$n);
+							$Area=($hp*$h)/2;
+							echo "
+							
+								<div class='alert alert-warning' role='alert'>
+									El Área del triángulo es: $Area
+								</div>
+							";
+							echo "
+								
+								<div class='alert alert-warning' role='alert'>
+									Donde n = $n  y c = $hp por lo tanto m= $m y hc= $h
+								</div>	
+							
+							 ";
+						}
 					?> 	
 				</div>
 						<br>

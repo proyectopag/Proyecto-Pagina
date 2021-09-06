@@ -83,7 +83,7 @@
 							echo "
 							
 							<div class='alert alert-warning' role='alert'>
-								El Área del Círculo es: $Radio
+								El Área del Círculo es: $Area
 							</div>";
 						}
 						elseif($Diametro > 0){

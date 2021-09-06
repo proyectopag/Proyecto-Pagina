@@ -36,7 +36,8 @@
 					<a href="../templates/Herramientas.html">Herramientas</a>
 					<a href="../templates/Temas.html">Temas</a>
 					<a href="../templates/Contacto.html">Contacto</a>
-					<a href="">Ayuda</a>
+					<a href="../templates/Ayuda.html">Ayuda</a>
+
 				</nav>
 			</div>
 

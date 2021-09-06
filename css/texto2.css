@@ -12,10 +12,7 @@
 	border-radius: 10px;
 }
 
-#texto2 .cle:after{
-	content:"";
-	background-color:
-}
+
 
 #texto2 .cle:hover{
 	transform: scale(1.05);

@@ -13,7 +13,12 @@
 	border-bottom: 0px dotted black !important; /* If you want dots under the hoverable text */
 	opacity: 1 !important;
   }
-  
+  .carousel-control-next-icon{
+	  background-image: url('https://image.flaticon.com/icons/png/512/130/130884.png')!important;
+  }
+  .carousel-control-prev-icon{
+	  background-image: url('https://static.thenounproject.com/png/2553788-200.png')!important;
+  }
   /* Tooltip text */
   .tooltip .tooltiptext {
 	visibility: hidden !important;

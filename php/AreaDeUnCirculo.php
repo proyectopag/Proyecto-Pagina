@@ -36,7 +36,7 @@
 					<a href="../templates/Herramientas.html">Herramientas</a>
 					<a href="../templates/Temas.html">Temas</a>
 					<a href="../templates/Contacto.html">Contacto</a>
-					<a href="">Ayuda</a>
+					<a href="../templates/Ayuda.html">Ayuda</a>
 				</nav>
 			</div>
 
@@ -76,15 +76,17 @@
 							$Area = $Radio * $Radio * 3.14159265359;
 							echo "
 							
-							<div class='alert alert-warning' role='alert'>
-							Donde el Radio es: $Radio y π es : 3.14159265359
-							</div>";
+								<div class='alert alert-warning' role='alert'>
+									El Área del Círculo es: $Area
+								</div>
+							
+							";
 
 							echo "
-							
-							<div class='alert alert-warning' role='alert'>
-								El Área del Círculo es: $Area
-							</div>";
+								<div class='alert alert-warning' role='alert'>
+									Donde el Radio es: $Radio y π es : 3.14159265359
+								</div>
+							";
 						}
 						elseif($Diametro > 0){
 							$Area = ($Diametro/2) * ($Diametro/2) * 3.14159265359;

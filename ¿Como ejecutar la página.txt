@@ -1,0 +1,11 @@
+	¿Como ejecutar la página web?
+
+-Primero de todo lo que necesitamos es instalar un programa que se llama AppServer
+Link: https://www.appserv.org/en/
+
+-Para la instalación recomendamos seguir los pasos del siguiente video: https://youtu.be/sEfcmo-THjM.
+
+-Cuando se haya instalado AppServe se debe copiar la carpeta del proyecto en una carpeta llamada www en la ruta de instalación de Appserver
+Ejemplo de la ruta: C:\AppServ\www
+
+-Para finalizar en cualquier navegador se ingresa el sigiente link localhost:8000/Proyecto-Pagina/Inicio.html y ya puede probar todas las funciones de la página web.

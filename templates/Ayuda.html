@@ -55,7 +55,7 @@
                 <br>  
                 <!-- Tab links -->
             <div class="tab" style="border-top-right-radius: 10px;border-top-left-radius: 10px;">
-                <button class="tablinks active" onclick="openCity(event, 'Calculadora')">Calculadora</button>
+                <button class="tablinks" onclick="openCity(event, 'Calculadora')">Calculadora</button>
                 <button class="tablinks" onclick="openCity(event, 'Temas')">Temas</button>
             </div>
             
@@ -63,46 +63,162 @@
             <div id="Calculadora" class="tabcontent">
                 <h3>Calculadora</h3>
                 <p>Para usar las diferentes herramientas de la calculadora primero debes elegir qué operación desea realizar, a continuación, mueva el cursor al nombre de la herramienta que desea utilizar y oprima clic para ingresar.</p>
-                <img src = "/img/Ayuda/Clip referencia Calculadora.gif">
+                <img src = "../img/Ayuda/Clip referencia Calculadora.gif">
                 <br><br>
-
-                <!--Esto es una prueba que estoy haciendo para separar las diferentes secciones de ayuda, se que no funcionan pero mi conocimiento en nulo, Camilo.-->
-                <!-- Tab links -->
                 <div class="tab" style="border-top-right-radius: 10px;border-top-left-radius: 10px;">
-                	<button class="tablinks" onclick="openCity(event, 'Área de un círculo')">Área de un círculo</button>
-                	<button class="tablinks" onclick="openCity(event, 'Área de un Rectángulo')">Área de un Rectángulo</button>
-            	</div>
+	                <button class="tablinks" onclick="openCity(event, 'Área de un círculo')">Área de un círculo</button>
+	                <button class="tablinks" onclick="openCity(event, 'Área de un Rectángulo')">Área de un Rectángulo</button>
+	                <button class="tablinks" onclick="openCity(event, 'Área de un Triángulo')">Área de un Triángulo</button>
+	                <button class="tablinks" onclick="openCity(event, 'Volumen de un Paralelepípedo')">Volumen de un Paralelepípedo</button>
+	                <button class="tablinks" onclick="openCity(event, 'Volumen de un Cilindro')">Volumen de un Cilindro</button>
+	                <button class="tablinks" onclick="openCity(event, 'Volumen de una Pirámide')">Volumen de una Pirámide</button>
+	            </div>
+            </div>
 
-            	<!-- Tab content -->
-            	<div id="Área de un círculo" class="tabcontent">
-            		<h3>Área de un Rectángulo</h3>
-            		<p>Hola.txt</p>
-            	</div>
+            <div id="Área de un círculo" class="tabcontent">
+            	<h3>Área de un círculo</h3>
+            	<p>
+           			Simplemente para que la herramienta halle el área de un círculo hay dos opciones:
+           			<br><br>
+           			Opción 1: Ingresar el Radio del Círculo.
+           			<img src = "..\img\Ayuda\Área de un círculo\Área de un círculo; Opcion 1.png">
+           			<br>
+           			Opción 2: Ingresar el Diámetro del Círculo.
+           			<img src = "..\img\Ayuda\Área de un círculo\Área de un círculo; Opcion 2.png">
+           			<br>
+           			Después debe hacer clic en calcular y automáticamente calcula el resultado del área del círculo.
+           			<img src = "..\img\Ayuda\Área de un círculo\Área de un círculo Calcular.png">
+           			<table>
+           				<tr>
+           					<th align = "center">
+           						<img src = "..\img\Ayuda\Área de un círculo\Área de un círculo Resultado Opcion 1.png">
+           					</th>
+           					<th align = "center">
+           						<img src = "..\img\Ayuda\Área de un círculo\Área de un círculo Resultado Opcion 2.png">
+           					</th>
+           				<tr>
+           				<tr>
+           					<th align = "center">
+           						Resultado Opción 1
+           					</th>
+           					<th align = "center">
+           						Resultado Opción 2
+           					</th>
+           				<tr>
+           			</table>
+            	</p>
+            </div>
 
-            	<div id="Área de un Rectángulo" class="tabcontent">
-            		<h3>Área de un Rectángulo</h3>
-            		<p>Hola.txt</p>
-            	</div>
-            	<!--Fin de la prueba-->
-
+            <div id="Área de un Rectángulo" class="tabcontent">
+            	<h3>Área de un Rectángulo</h3>
+            	<p>
+            		Esta herramienta tiene dos funciones:
+            		<br><br>
+            		Función 1: Permite hallar el área de un rectángulo ingresando la base y la altura de este mismo. Oprima el botón Calcular para calcular el área del rectángulo.
+            		<img src = "..\img\Ayuda\Área de un Rectángulo\Área de un Rectángulo Función 1.png">
+            		<br>
+            		Función 2: Permite hallar el área de un cuadrado ingresando el valor de cualquiera de sus lados en cualquiera de las dos casillas disponibles; por último, oprime el botón calcular.
+            		
+            		<table>
+           				<tr>
+           					<th align = "center">
+           						<img src = "..\img\Ayuda\Área de un Rectángulo\Área de un Rectángulo Funcipon 2 (1).png"> 
+           					</th>
+           					<th align = "center">
+           						<img src = "..\img\Ayuda\Área de un Rectángulo\Área de un Rectángulo Funcipon 2 (2).png">
+           					</th>
+           				<tr>
+           			</table>
+            	</p>
             </div>
             
+            <div id="Área de un Triángulo" class="tabcontent">
+            	<h3>Área de un Triángulo</h3>
+            	<p>
+            		La herramienta para calcular el área de un triángulo tiene tres diferentes funciones que se van a explicar a continuación:
+            		<br><br>
+            		Función 1: Se calcula el área de un triángulo rectángulo ingresando solamente la base y la altura del mismo. Después se oprime el botón de calcular y la herramienta arrojará el resultado.
+            		<img src = "..\img\Ayuda\Área de un Triángulo\Área de un Triángulo Funcion 1.png">
+            		<br>
+            		Función 2: Para calcular el área del triángulo rectángulo en este caso se ingresan los valores de dos de los lados del triángulo y el ángulo que hay en el vértice en donde se encuentran los dos lados. Se oprime el botón Calcular para mostrar el resultado.
+            		<img src = "..\img\Ayuda\Área de un Triángulo\Área de un Triángulo Función 2.png">
+            		<br>
+            		Función 3: Por último, se tiene una calculadora del área de un triángulo rectángulo utilizando el Teorema de Euclides. En este caso se especifica que como mínimo se deben ingresar dos valores de los que se solicitan; además se aclara que hay 2 combinaciones de dos valores para los cuales no hay solución (a) y (m) o (b) y (n). Ya teniendo ingresado los valores se da clic al botón de calcular, calculando el área del triángulo rectángulo.
+            		<img src = "..\img\Ayuda\Área de un Triángulo\Área de un Triángulo Funcion 3.png">
+            	</p>
+            </div>
+            
+            <div id="Volumen de un Paralelepípedo" class="tabcontent">
+            	<h3>Volumen de un Paralelepípedo</h3>
+            	<p>
+            		Es una herramienta que permite calcular el volumen de un paralelepípedo ingresando sus tres dimensiones, largo; ancho y altura.
+            		<img src = "..\img\Ayuda\Volumen de un Paralelepípedo\Volumen de un Paralelepípedo dimensiones.png">
+            		<br>
+            		Después debe hacer clic en calcular y calculara el volumen del paralelepípedo de forma automática.
+            		<img src = "..\img\Ayuda\Volumen de un Paralelepípedo\Volumen de un Paralelepípedo Calcular.png">
+            		<img src = "..\img\Ayuda\Volumen de un Paralelepípedo\Volumen de un Paralelepípedo Resultado.png">
+            	</p>
+            </div>
+            
+            <div id="Volumen de un Cilindro" class="tabcontent">
+            	<h3>Volumen de un Cilindro</h3>
+            	<p>
+            		Es una simple herramienta que permite calcular el volumen de un cilindro ingresando el valor del radio de su base y la altura del cilindro. Luego poniendo el cursor encima del botón calcular, haz clic y automáticamente hará el cálculo para hallar el volumen del cilindro.
+            		<img src = "..\img\Ayuda\Volumen de un Cilindro.png">
+            	</p>
+            </div>
+            
+            <div id="Volumen de una Pirámide" class="tabcontent">
+            	<h3>Volumen de una Pirámide</h3>
+            	<p>
+            		Para esta herramienta se tiene tres funciones que permiten calcular el volumen de una pirámide, de un cono y de una pirámide cuadrada.
+            		<br><br>
+            		Función 1: Permite hallar el volumen de la pirámide con dos opciones:
+            		<br>
+            		<ul>
+            			<li>Opción 1: Pirámide con base rectangular. Se debe ingresar el lado mayor y el lado menor de la base rectangular; por último, se ingresa la altura de la pirámide para así oprimir el botón calcular, que calculará el volumen de la pirámide.</li>
+            			<img src = "..\img\Ayuda\Volumen de una Pirámide\Volumen de una Pirámide; Funcion 1; Opcion 1.png">
+
+            			<li>Opción 2: Pirámide con base cuadrada. Solo es necesario ingresar uno de los lados de la base cuadrada en la casilla l1 o en la casilla l2; luego se ingresa la altura de la pirámide para finalizar oprimiendo el botón calcular, que calculara el volumen de la pirámide.</li>
+            			<table>
+            				<tr>
+            					<th>
+            						<img src = "..\img\Ayuda\Volumen de una Pirámide\Volumen de una Pirámide; Funcion 1; Opcion 2 (1).png">
+            					</th>
+            					<th>
+            						<img src = "..\img\Ayuda\Volumen de una Pirámide\Volumen de una Pirámide; Funcion 1; Opcion 2 (2).png">
+            					</th>
+            				</tr>
+            				<tr>
+            					<th colspan = "2">
+            						<img src = "..\img\Ayuda\Volumen de una Pirámide\Volumen de una Pirámide; Funcion 1; Opcion 2; Resultado.png">
+            					</th>
+            				</tr>
+            			</table>
+            		</ul>
+            		<br>
+            		Función 2: Permite calcular el volumen de un cono, que es una pirámide con base circular, para ello se debe ingresar el radio de la base circular, luego se ingresa la altura y, por último, se oprime el botón calcular que calculará el volumen de la pirámide.
+            		<img src = "..\img\Ayuda\Volumen de una Pirámide\Volumen de una Pirámide Funcion 2.png">
+            		<br>
+            		Función 3: Permite hallar el volumen de una pirámide triangular, es decir una pirámide con base triangular. Para calcular su volumen se debe ingresar la base y la altura del triángulo; y la altura de la pirámide triangular. Finalmente se oprime el botón calcular para calcular el volumen de la pirámide triangular.
+            		<img src = "..\img\Ayuda\Volumen de una Pirámide\Volumen de una Pirámide Funcion 3.png">
+            	</p>
+            </div>
+            
+
             <div id="Temas" class="tabcontent">
                 <h3>Temas</h3>
                 <p>
                 	Este apartado de Temas tienes todas las explicaciones necesarias sobre cómo se hallan el área y el volumen de las distintas figuras que se pueden calcular en las herramientas de calculadoras que tiene integrada la página.
                 	<br><br>
 					Para poder visualizar cualquier tema lo único que se debe hacer es pasar el cursor encima del recuadro del tema y hacer clic, se desplegará todo el contenido con respecto al tema. Si desea visualizar otro tema solo debes pasar el cursor sobre el recuadro del tema que desea ver y hacer clic, automáticamente se contraerá el recuadro del tema anterior y se desplegará el recuadro del tema que va a leer.
-					<img src = "/img/Ayuda/Clip referencia Temas 1.gif">
+					<img src = "../img/Ayuda/Clip referencia Temas 1.gif">
 					<br>
 					Por último, cada uno de los temas tiene adjunto un video de explicación y un acceso directo al final para ir a la calculadora correspondiente.
-					<img src = "/img/Ayuda/Clip referenacia Temas 2.gif">
+					<img src = "../img/Ayuda/Clip referenacia Temas 2.gif">
 				</p>
             </div>
             
-    
-
-
 				
 			</section><br><br><br>
 
